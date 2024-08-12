@@ -76,10 +76,7 @@ extract_files() {
   get_system_files "/product/etc/device_features"
 
   ### overlay
-  # get_system_files "/mi_ext/product/overlay"
-  # get_system_files "/odm/overlay"
   # get_system_files "/product/overlay"
-  # get_system_files "/vendor/overlay"
 
   ### 设置
   # get_system_files "/system_ext/priv-app/Settings"
@@ -89,16 +86,11 @@ extract_files() {
   # get_system_files "/system_ext/priv-app/MiuiSystemUI"
   get_system_files "/system_ext/priv-app/MiuiSystemUI/MiuiSystemUI.apk"
 
-  ### 相机
-  # get_system_files "/product/priv-app/MiuiCamera"
-  get_system_files "/product/priv-app/MiuiCamera/MiuiCamera.apk"
+  get_system_files "/system/framework/framework.jar"
 
-  ### zram.ko
-  get_system_files "/vendor_boot/ramdisk/lib/modules/zram.ko"
+  get_system_files "/system/framework/services.jar"
 
-  ### zsmalloc.ko
-  get_system_files "/vendor_boot/ramdisk/lib/modules/zsmalloc.ko"
+  get_system_files "/system/system_ext/framework/miui-framework.jar"
 
-  ### dtb
-  get_system_files "/vendor_boot/dtb"
+  get_system_files "/system/system_ext/framework/miui-services.jar"
 }
