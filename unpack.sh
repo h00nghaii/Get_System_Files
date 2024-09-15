@@ -72,13 +72,13 @@ extract_files() {
   # get_files_config
   # get_prop_files
 
-  ### device_features
-  get_system_files "/product/etc/device_features"
+  ### /system/build.prop
+  get_system_files "/system/build.prop"
 
   ### overlay
   # get_system_files "/product/overlay"
 
-  ### 设置
+  ### Settings
   # get_system_files "/system_ext/priv-app/Settings"
   get_system_files "/system_ext/priv-app/Settings/Settings.apk"
 
@@ -93,4 +93,8 @@ extract_files() {
   get_system_files "/system/system_ext/framework/miui-framework.jar"
 
   get_system_files "/system/system_ext/framework/miui-services.jar"
+
+  get_system_files "/product/priv-app/MiuiHome/Miuihome.apk"
+
+  get_system_files "/system/product/app/MiuiSystemUIPlugin/MiuiSystemUIPlugin.apk"
 }
